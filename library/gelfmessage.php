@@ -1,6 +1,7 @@
 <?php
     
 namespace Bundles\Gelf;
+use InvalidArgumentException;
 use Exception;
 use e;
 

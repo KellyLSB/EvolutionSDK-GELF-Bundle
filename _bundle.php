@@ -28,6 +28,8 @@ class Bundle {
 	 * @author Kelly Becker
 	 */
 	public function _on_exception($e) {
+		if(!$this->host) return null;
+
 		$traceString = "";
 		$bundle_access = false;
 		$trace = array_reverse($e->getTrace());
